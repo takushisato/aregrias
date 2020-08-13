@@ -1,0 +1,305 @@
+@charset "utf-8";
+/*あにめ*/
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+/*基本*/
+body {
+	padding-top: 55px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+h1 {
+	text-decoration: underline;
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+	text-align: center;
+}
+
+.fixed-top {
+	background-color: rgba(220,220,220,0.4);
+	padding: 0;
+}
+
+.navbar-nav {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.nav-item {
+	padding: 7px 5px;
+}
+
+.nav-item:hover {
+	background-color: white;
+    transition: background-color .6s linear;
+}
+
+.navbar-brand {
+	padding: 13px 5px;
+}
+
+.navbar-brand:hover {
+	background-color: white;
+	transition: background-color .6s linear;
+}
+
+img {
+	margin: 5px;
+}
+
+li {
+	list-style: none;
+}
+/*top*/
+.top {
+    width: 100vw;
+	height: auto;
+	margin: 0;
+}
+
+.index-honbun {
+	text-align: center;
+}
+
+.top-img-eria {
+	text-align: center;
+}
+
+.smart-img {
+	display: none;
+}
+
+.smart-top-img {
+	width: 500px;
+	height: auto;
+}
+
+.top-img {
+	height: 80vh;
+	width: auto;
+	margin: 0 auto;
+}
+
+/*Introduction*/
+.tokutyou {
+	text-align: center;
+}
+
+.setubi {
+	display: flex;
+	text-align: center;
+}
+
+.gomi {
+	text-align: center;
+}
+
+.gomi-img {
+    max-width: 400px;
+	height: auto;
+}
+
+table{
+  border-collapse:separate;
+  border-spacing: 0;
+	table-layout: auto;
+}
+
+table th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+table th{
+  text-align: center;
+  color:white;
+  background: linear-gradient(#829ebc,#225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+/*  width: 25%;*/
+  padding: 10px 0;
+}
+
+table td{
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+/*  width: 25%;*/
+  padding: 10px 0;
+}
+
+table td:last-child{
+  border-right: 1px solid #a8b7c5;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+.dog {
+	max-width: 250px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+    padding: 0;
+	border-radius: 10px;
+	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+	margin: 10px;
+}
+
+.dog:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+	box-shadow: 4px 4px 15px gray;
+}
+
+.dog-about {
+	display: flex;
+	margin: 0 auto;
+}
+
+.dogs {
+	display: flex;
+}
+
+.dog-setumei {
+	text-align: right;
+}
+
+/*room's*/
+.madori-honbun {
+	text-align: center;
+}
+
+
+/*
+.balcony {
+	background-color: oldlace;
+}
+*/
+
+/*vacancy*/
+.kuusitu-honbun {
+	text-align: center;
+}
+
+/*link*/
+.link {
+	display: block;
+	margin: 0 auto;
+}
+
+.fudousan-link {
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.fudousan-img {
+	max-width: 200px;
+	height: auto;
+}
+
+/*contact*/
+.hirano {
+	text-align: center;
+}
+
+.hirano-renraku {
+	font-size: 20px;
+}
+
+.map {
+	text-align: center;
+/*	background-color: aliceblue;*/
+}
+
+.contact {
+	text-align: center;;
+}
+
+/*フッター*/
+footer {
+	text-align: center;
+	background-color: lightgray;
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	margin: 0;
+}
+
+
+@media screen and (max-width:1000px) {
+	.fixed-top {
+		background-color: white;
+	}
+	
+	.smart-img {
+		display: block;
+		text-align: center;
+	}
+	
+	.top-img-eria, .balcony-img-eria {
+		display: none;
+	}
+	
+	.setubi {
+		display: block;
+	}
+	
+	.dog-about {
+		display: block;
+	}
+	
+	.dog-setumei {
+	text-align: center;
+    }
+	
+	.dogs {
+		display: block;
+	}
+	
+	.dog {
+		max-width: 500px;
+		height: auto;
+	}
+	.link {
+		display: block;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.fudousan-link {
+		display: block;
+		margin: 0 auto;
+	}
+}
